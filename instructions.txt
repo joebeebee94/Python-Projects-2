@@ -1,0 +1,67 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+STEPS TO BECOMING A GOOD DEV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Useful terminal functions:
+> python3 --help
+> python -m pip list
+> tree FOLDER-NAME
+> mkdir
+> rmdir
+> git reset HEAD --
+https://www.makeuseof.com/tag/mac-terminal-commands-cheat-sheet/
+
+CREATING VIRTUAL ENVIRONMENT AND FREEZING DEPENDENCIES
+
+1. Make directory & change directory
+2. Create virtual environment
+3. Activate virtual environment
+4. Install dependencies
+5. Freeze to requirements.txt file
+6. Deactivate virtual envrionment
+
+In terminal window:
+
+> mkdir NAME-OF-DIRECTORY
+> cd NAME-OF-DIRECTORY
+> python3 -m venv NAME-OF-VENV
+> source NAME-OF-VENV/bin/activate
+(NAME-OF-VENV) > pip install DEPENDENCIES
+(NAME-OF-VENV) > python -m pip freeze > requirements.txt
+(NAME-OF-VENV) > deactivate
+
+USING GIT & GITHUB
+
+https://realpython.com/python-git-github-intro
+1. git status – Make sure your current area is clean.
+2. git pull – Get the latest version from the remote. This saves merging issues later.
+3. Edit your files and make your changes. Remember to run your linter and do unit tests!
+4. git status – Find all files that are changed. Make sure to watch untracked files too!
+5. git add [files] – Add the changed files to the staging area.
+6. git commit -m "message" – Make your new commit.
+7. git push origin [branch-name] – Push your changes up to the remote.
+
+> cd NAME-OF-DIRECTORY
+> git init
+> git status
+> touch .gitignore
+> echo "__pycache__" >> .gitignore
+> echo "venv" >> .gitignore
+> git add .gitignore
+> git add NAME-OF-FILE
+> git commit -m "MESSAGE"
+> git branch -M main
+> git remote add origin 'your_url_name'
+> git push -u origin master
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/joebeebee94/test.git
+git push -u origin main
+
+CREATING UNIT TESTS
+
+this is a test
