@@ -47,12 +47,15 @@ https://realpython.com/python-git-github-intro
 > touch .gitignore
 > echo "__pycache__" >> .gitignore
 > echo "venv" >> .gitignore
+
 > git add .gitignore
 > git add NAME-OF-FILE
+> git add .
+
 > git commit -m "MESSAGE"
 > git branch -M main
 > git remote add origin 'your_url_name'
-> git push -u origin master
+> git push -u origin main
 
 
 git init
@@ -65,3 +68,4 @@ git push -u origin main
 CREATING UNIT TESTS
 
 this is a test
+
